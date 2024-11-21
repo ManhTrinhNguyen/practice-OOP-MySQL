@@ -12,6 +12,7 @@
     <li>
       {{book.title}}<br>
       {{book.author}}<br>
+      <a href="{%url 'book' book.pk%}">See Detail</a>
     </li>
     <br>
     {% endfor %}

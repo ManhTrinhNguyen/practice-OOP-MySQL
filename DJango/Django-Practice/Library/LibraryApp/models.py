@@ -23,8 +23,7 @@ class BookModel(models.Model):
 
   def __str__(self):
     return self.title
-
-
+  
 class TransactionModel(models.Model):
   borrow_date = models.DateField(auto_now_add=True)
   return_date = models.DateField(blank=True, null=True)

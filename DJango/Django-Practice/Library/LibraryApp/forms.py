@@ -16,3 +16,8 @@ class TransactionModelForm(forms.ModelForm):
     model = TransactionModel
     fields = '__all__'
 
+  # Exclude book already borrow by overiding the queryset
+  # def __init__(self, *args, **kwargs):
+  #   super().__init__(*args, **kwargs)
+  #   self.fields['book'].queryset = BookModel.objects.filter(is_available = True)
+
